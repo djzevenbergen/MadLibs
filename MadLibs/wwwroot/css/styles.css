@@ -1,0 +1,13 @@
+.jumbotron 
+{
+  background-image: url("https://www.xcoos.com/blog/wp-content/uploads/2019/11/uc_superhero_-_give_day_image_no_text.jpg");
+  background-size: cover;
+  border: double 4px;
+  border-color: gold;
+  color: rgb(255, 255, 255);
+  letter-spacing: 1px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-shadow: 0px 0px 12px rgb(235, 232, 40), 0px 0px 12px #fff;
+  text-align: center;
+}
