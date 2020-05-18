@@ -13,19 +13,29 @@ namespace MadLibs.Controllers
     public ActionResult MadLibOne(string name, string sillyword, string number, string adjectiveOne, string adjectiveTwo, string adjectiveThree, string adjectiveFour, string adjectiveFive, string noun, string verb, string relative)
     {
       MadLibInputs tempLib = new MadLibInputs();
-      tempLib.Name = name;
-      tempLib.SillyWord = sillyword;
-      tempLib.Number = number;
-      tempLib.Noun = noun;
-      tempLib.Verb = verb;
-      tempLib.Relative = relative;
-      tempLib.AdjectiveOne = adjectiveOne;
-      tempLib.AdjectiveTwo = adjectiveTwo;
-      tempLib.AdjectiveThree = adjectiveThree;
-      tempLib.AdjectiveFour = adjectiveFour;
-      tempLib.AdjectiveFive = adjectiveFive;
+      tempLib.WordOne = name;
+      tempLib.WordTwo = sillyword;
+      tempLib.WordThree = number;
+      tempLib.WordFour = adjectiveOne;
+      tempLib.WordFive = noun;
+      tempLib.WordSix = adjectiveTwo;
+      tempLib.WordSeven = relative;
+      tempLib.WordEight = adjectiveThree;
+      tempLib.WordNine = verb;
+      tempLib.WordTen = adjectiveFour;
+      tempLib.WordEleven = adjectiveFive;
 
       return View(tempLib);
     }
+
+    [Route("/madlibtwo")]
+
+    public ActionResult MadLibTwo(string name, string unrealisticprofession, string country, string sillyword, string color, string adjective, string adverb, string sillynameone, string sillynametwo, string facialfeature, string uscity, string sillynamethree, string verb, string nounone, string formerlybadassactornowsellingout, string nountwo)
+    {
+      MadLibInputs tempLibTwo = new MadLibInputs();
+    }
+
+
+
   }
 }

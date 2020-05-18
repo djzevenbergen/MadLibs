@@ -36,7 +36,7 @@ namespace MadLibs
 
       app.Run(async (context) =>
         {
-          await context.Response.WriteAsync("Hello There!");
+          await context.Response.WriteAsync("There's been an error, please try again.");
         });
     }
   }
