@@ -1,6 +1,7 @@
-.jumbotron 
+#superTron 
 {
   background-image: url("https://www.xcoos.com/blog/wp-content/uploads/2019/11/uc_superhero_-_give_day_image_no_text.jpg");
+  background-color: rgba(255, 68, 0, 0.815);
   background-size: cover;
   border: double 4px;
   border-color: gold;
@@ -10,4 +11,141 @@
   text-transform: uppercase;
   text-shadow: 0px 0px 12px rgb(235, 232, 40), 0px 0px 12px #fff;
   text-align: center;
+}
+#superBod
+{
+  background-image: url("https://wallpaperaccess.com/full/840694.jpg");
+  background-size: cover;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  letter-spacing: 1px;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-shadow: 0px 0px 12px rgb(235, 232, 40), 0px 0px 12px #fff;
+}
+#spaceTron 
+{
+  background-image: url("https://sm.mashable.com/t/mashable_in/photo/default/nasa-galaxy_9pu4.1920.jpg");
+  background-color: rgba(91, 49, 190, 0.815);
+  background-size: cover;
+  border: double 4px;
+  border-color: gold;
+  color: rgb(255, 255, 255);
+  letter-spacing: 1px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-shadow: 0px 0px 12px rgb(235, 232, 40), 0px 0px 12px #fff;
+  text-align: center;
+}
+#spaceBod
+{
+  background-image: url("https://images.pexels.com/photos/956981/milky-way-starry-sky-night-sky-star-956981.jpeg");
+  background-size: cover;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  letter-spacing: 1px;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-shadow: 0px 0px 12px rgb(235, 232, 40), 0px 0px 12px #fff;
+}
+
+.animated {
+  -webkit-animation-duration: 7s;
+  animation-duration: 3s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+@-webkit-keyframes bounceInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-2000px);
+  }
+  60% {
+    opacity: 1;
+    -webkit-transform: translateY(30px);
+  }
+  80% {
+    -webkit-transform: translateY(-10px);
+  }
+  100% { 
+    -webkit-transform: translateY(0);
+  }
+}
+
+@keyframes bounceInDown {
+  0% {
+    opacity: 0;
+     transform: translateY(-2000px);
+    }
+    60% {
+      opacity: 1;
+      transform: translateY(30px);
+    }
+    80% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+.bounceInDown {
+  -webkit-animation-name: bounceInDown;
+  animation-name: bounceInDown;
+}
+
+.bounceInDown {
+  -webkit-animation-name: bounceInDown;
+  animation-name: bounceInDown;
+}
+#button2 {
+  padding: auto;
+  width: auto;
+  height: auto;
+  color: rgb(248, 248, 215);
+  letter-spacing: 1px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-shadow: 0px 0px 12px rgb(255, 251, 0), 0px 0px 12px #fff;
+  display: inline-block;
+  font-size: 21px;
+  cursor: pointer;
+  background-color: rgb(1, 39, 75);
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  animation: blur 8s ease-in-out;
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px #fff ;
+}
+button:active {
+  background-color:  rgb(71, 47, 47);
+  transform: translateY(5px);
+ }
+button:hover {
+  background-color:  rgb(72, 67, 139);
+  transform: translateY(-1px);
+}
+@keyframes blur {
+  from {
+    box-shadow:0px 0px 10px #fff,
+      0px 0px 10px #fff, 
+      0px 0px 25px #fff,
+      0px 0px 25px #fff,
+      0px 0px 25px #fff,
+      0px 0px 25px #fff,
+      0px 0px 25px #fff,
+      0px 0px 25px #fff,
+      0px 0px 50px #fff,
+      0px 0px 50px #fff,
+      0px 0px 50px rgb(184, 183, 123),
+      0px 0px 150px rgb(184, 183, 123),
+      0px 10px 100px rgb(184, 183, 123),
+      0px 10px 100px rgb(184, 183, 123),
+      0px 10px 100px rgb(184, 183, 123),
+      0px 10px 100px rgb(184, 183, 123),
+      0px -10px 100px rgb(184, 183, 123),
+      0px -10px 100px rgb(184, 183, 123);
+  }
 }

@@ -6,8 +6,10 @@ namespace MadLibs.Controllers
 {
   public class HomeController : Controller
   {
-
     [Route("/")]
+    public ActionResult Home() { return View(); }
+
+    [Route("/form")]
     public ActionResult Form() { return View(); }
 
     [Route("/formtwo")]
@@ -17,18 +19,6 @@ namespace MadLibs.Controllers
     [Route("/madlibone")]
     public ActionResult MadLibOne(string name, string sillyword, string number, string adjectiveOne, string adjectiveTwo, string adjectiveThree, string adjectiveFour, string adjectiveFive, string noun, string verb, string relative)
     {
-      // MadLibInputs tempLib = new MadLibInputs();
-      // tempLib.WordOne = name;
-      // tempLib.WordTwo = sillyword;
-      // tempLib.WordThree = number;
-      // tempLib.WordFour = adjectiveOne;
-      // tempLib.WordFive = noun;
-      // tempLib.WordSix = adjectiveTwo;
-      // tempLib.WordSeven = relative;
-      // tempLib.WordEight = adjectiveThree;
-      // tempLib.WordNine = verb;
-      // tempLib.WordTen = adjectiveFour;
-      // tempLib.WordEleven = adjectiveFive;
 
       Dictionary<int, string> madLibInput = new Dictionary<int, string> { { 1, name }, { 2, sillyword }, { 3, number }, { 4, adjectiveOne }, { 5, noun }, { 6, adjectiveTwo }, { 7, relative }, { 8, adjectiveThree }, { 9, verb }, { 10, adjectiveFour }, { 11, adjectiveFive } };
 
