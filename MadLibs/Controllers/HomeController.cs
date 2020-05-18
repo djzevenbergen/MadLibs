@@ -22,7 +22,7 @@ namespace MadLibs.Controllers
       tempLib.AdjectiveOne = adjectiveOne;
       tempLib.AdjectiveTwo = adjectiveTwo;
       tempLib.AdjectiveThree = adjectiveThree;
-      tempLip.AdjectiveFour = adjectiveFour;
+      tempLib.AdjectiveFour = adjectiveFour;
       tempLib.AdjectiveFive = adjectiveFive;
 
       return View(tempLib);
