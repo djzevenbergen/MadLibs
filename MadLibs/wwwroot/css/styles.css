@@ -51,6 +51,8 @@
   text-shadow: 0px 0px 12px rgb(235, 232, 40), 0px 0px 12px #fff;
 }
 
+#
+
 .animated {
   -webkit-animation-duration: 7s;
   animation-duration: 3s;
@@ -148,4 +150,10 @@ button:hover {
       0px -10px 100px rgb(184, 183, 123),
       0px -10px 100px rgb(184, 183, 123);
   }
+}
+#superForm {
+  background-color: rgba(0, 0, 0, 0.623);
+}
+#superOutput {
+  background-color: rgba(0, 0, 0, 0.623);
 }
