@@ -10,6 +10,10 @@ namespace MadLibs.Controllers
     [Route("/")]
     public ActionResult Form() { return View(); }
 
+    [Route("/formtwo")]
+
+    public ActionResult FormTwo() { return View(); }
+
     [Route("/madlibone")]
     public ActionResult MadLibOne(string name, string sillyword, string number, string adjectiveOne, string adjectiveTwo, string adjectiveThree, string adjectiveFour, string adjectiveFive, string noun, string verb, string relative)
     {
@@ -33,12 +37,14 @@ namespace MadLibs.Controllers
       return View(tempLib);
     }
 
-    // [Route("/madlibtwo")]
+    [Route("/madlibtwo")]
 
-    // public ActionResult MadLibTwo(string name, string unrealisticprofession, string country, string sillyword, string color, string adjective, string adverb, string sillynameone, string sillynametwo, string facialfeature, string uscity, string sillynamethree, string verb, string nounone, string formerlybadassactornowsellingout, string nountwo)
-    // {
-    //   MadLibInputs tempLibTwo = new MadLibInputs();
-    // }
+    public ActionResult MadLibTwo(string name, string unrealisticprofession, string country, string sillyword, string color, string adjective, string adverb, string sillynameone, string sillynametwo, string facialfeature, string uscity, string sillynamethree, string verb, string nounone, string formerbadassactornowsellingout, string nountwo)
+    {
+      Dictionary<int, string> madLibInput = new Dictionary<int, string> { { 1, name }, { 2, unrealisticprofession }, { 3, country }, { 4, sillyword }, { 5, color }, { 6, adjective }, { 7, adverb }, { 8, sillynameone }, { 9, sillynametwo }, { 10, facialfeature }, { 11, uscity }, { 12, sillynamethree }, { 13, verb }, { 14, nounone }, { 15, formerbadassactornowsellingout }, { 16, nountwo } };
+      MadLibInputs tempLibTwo = new MadLibInputs(madLibInput);
+      return View(tempLibTwo);
+    }
 
 
   }
